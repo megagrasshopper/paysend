@@ -1,0 +1,5 @@
+CREATE DATABASE bank;
+CREATE ROLE paysend login;
+ALTER ROLE paysend PASSWORD 'paysend';
+GRANT CONNECT ON DATABASE bank TO paysend;
+GRANT ALL PRIVILEGES ON DATABASE bank TO paysend;
